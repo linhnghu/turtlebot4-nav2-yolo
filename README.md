@@ -1,20 +1,5 @@
 # TurtleBot 4: Nav2 + YOLO — ROS 2 Humble
 
-Bài thực hành TurtleBot 4 Lite trong Gazebo Fortress: kiểm tra sensor,
-điều khiển bằng bàn phím để tạo map với SLAM Toolbox, lưu map, localization
-bằng AMCL và di chuyển tự động bằng Nav2. Sử dụng world `maze` và simulator,
-controller có sẵn của TurtleBot 4.
-
-Repo gồm bài SLAM ban đầu và **[navigation tự động qua 3 goal kết hợp camera YOLO](README_VISION_NAV.md)**.
-Node Python dùng map đã lưu, AMCL và action `/navigate_to_pose` để đi tuần tự;
-node camera dùng `cv_bridge` và YOLO11n để nhận diện người trong Gazebo.
-
-**[Video demo 5 phút 12 giây](docs/demo/demo_rviz_yolo.mp4)** ·
-[Kết quả kiểm chứng](docs/VISION_VALIDATION.md) ·
-[Tọa độ ba goal](src/turtlebot4_vision_nav/config/goals.yaml)
-
-![Nav2 và YOLO đang chạy](docs/vision_demo_preview.png)
-
 ## Yêu cầu
 
 - Ubuntu 22.04, ROS 2 Humble Desktop.
